@@ -1,0 +1,1 @@
+This is my first project and is an imitiation of the visual aspect of Google's homepage! I will be using my newfound HTML and CSS skills for this project
