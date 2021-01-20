@@ -1,107 +1,131 @@
 <!DOCTYPE html>
+
 <style>
-.MiniLink {
-    color: gray;
-    font-size: smaller;
 
-}
+    .page{
+        display: flex;
+        flex-direction: column;
+    }
 
-.Centered {
-    display: flex;
-    justify-content: center;
-/*    align-items: center;
-    height: 50vh;*/
-
-}
-/*
-
-<button><font class = "CenterButton">Google Search</font></button>
-<button>I'm Feeling Lucky</button>
+    header ul{
+        display:flex;
+        justify-content: space-between;
+    }
 
 
-}
-.CenterButton {
-    margin: auto;
-}
+    footer ul{
+        background-color:#f2f2f2;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
 
-        <div>
-            <a style = "text-decoration: none;" href = #><font class = MiniLink>About</a></font>
-            <a style = "text-decoration: none;" href = #><font class = MiniLink>Store</a></font>
-        </div>
+    .CenterButtonsC /*Container*/ {
+        display: flex;
+        align-self: Center;
+    }
 
-*/
+    .CButtons {
+        
+        background-color:#f1eded;
+        width: 130px;
+        height: 35px;
+        color: rgb(106, 106, 107);
+        font-size: 11;
+        border-radius: 4px;
+        border: none;
+        margin: 10px;
+    }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+    .CButtons:hover {
+        color: black;
+        border: solid 1px rgb(213, 220, 221);
+    }
 
-li {
-    display: inline;
-    padding: 8px;
+    .inline{display:inline;}
+    
+    .HNavSize{font-size:12px;}
 
-}
+    .FNavSize{font-size:13px;}
 
-header a {
-     text-decoration: none;
-     color: gray;
-     font-size: smaller;
- }
+    header nav ul a , footer nav ul a{
+        color:rgb(82, 82, 90);
+    }
+    header a , footer a{text-decoration:none;}
 
+    header a:hover , footer a:hover{
+        text-decoration: underline;
+    }
+    header li , footer li{margin:5px;}
 
-footer {
+    footer ul{
+        margin-top: 450px;
+    }
 
-    background-color: rgb(242, 242, 242);
-}
+    .Center{
+        align-self: center;
+    }
 
-footer a {
-
-    text-decoration: none;
-    color: gray;
-    font-size: small;
-}
-
-input:hover {
-    border-color: gray;
-}
+    .SearchBox {
+        border-radius: 25px;
+        height: 45px;
+        width: 480px;
+        background-color: white;
+        border-style: solid;
+        box-shadow: 0px 1px rgb(204, 196, 196);
+    }
 
 </style>
+
 <html lang = "en">
     <head>
         <title>Google Homepage</title>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href = #>About</a></li>
-                    <li><a href = #>Store</a></li>
-                    <li style = "float: right;"><a href = #>Signin</a></li>
-                    <li style = "float: right;"><a href = #>Images</a></li>
-                    <li style = "float: right;"><a href = #>Gmail</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class = Centered>
-            <img src = https://web.archive.org/web/20191201000239im_/https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png alt = "Google Homepage Logo">   
+        <div class = page>
+            <header>
+                <nav>
+                    <ul>
+                        <div>
+                        <li class = "HNavSize inline text-decoration:none;"><a href = #>About</a></li>
+                        <li class = "HNavSize inline text-decoration:none;"><a href = #>Store</a></li>
+                        </div>
+                        <div>
+                        <li class = "HNavSize inline text-decoration:none;"><a href = #>Gmail</a></li>
+                        <li class = "HNavSize inline text-decoration:none;"><a href = #>Images</a></li>
+                        <li class = "HNavSize inline"><a href = #><img src = https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_apps_48px-512.png height = 20px width = 20px></a></li>
+                        <li class = "inline"><a href = # style = "text-decoration: none;font-weight:600;font-size:10pt;font-family:Arial;background-color:#4285f4;color:azure;padding: 5px 10px 8px 10px;">Sign in</a></li>
+                        </div>
+                    </ul>
+                </nav>
+            </header>
+            <section class = Center style = "padding-top: 134px;">
+                <img src = https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png>
+            </section>
+                <form class = Center style = "padding-top: 20px">
+                    <input style = "padding-left: 40px" type = text class = SearchBox>
+                    <img style = "width: 20px ; height: 20px" src = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9J_RUj8AOHbFdO9uE6J7DiwrmA7jT9c7uiw&usqp=CAU>
+                </form>
+            <section class = CenterButtonsC>
+                <button class = CButtons>Google Search</button>
+                <button class = CButtons>I'm Feeling Lucky</button>
+            </section>
+            <footer>
+                <nav>
+                    <ul>
+                        <div>
+                        <li class = "FNavSize inline text-decoration:none;"><a href = #>Advertising</a></li>
+                        <li class = "FNavSize inline text-decoration:none;"><a href = #>Business</a></li>
+                        <li class = "FNavSize inline text-decoration:none;"><a href = #>How Search Works</a></li>
+                        </div>
+                        <div>
+                        <li class = "FNavSize inline text-decoration:none;"><a href = #>Privacy</a></li>
+                        <li class = "FNavSize inline text-decoration:none;"><a href = #>Terms</a></li>
+                        <li class = "FNavSize inline text-decoration:none;"><a href = #>Settings</a></li>
+                        </div>
+                    </ul>
+                </nav>
+            </footer>
         </div>
-        <div>
-            <form>
-                <label class = Centered for = "Search"><input style = "border-radius: 20px; width: 50%; height: 30px;" id = "Search" name = "Search Button" type = "text"></label>
-            </form><br>
-        <footer>
-            <nav>
-                <ul>
-                    <li><a href = #>Advertising</a></li>
-                    <li><a href = #>Business</a></li>
-                    <li><a href = #>How Search works</a></li>
-                    <li style = "float: right;"><a href = #>Settings</a></li>
-                    <li style = "float: right;"><a href = #>Terms</a></li>
-                    <li style = "float: right;"><a href = #>Privacy</a></li>
-                </ul>
-            </nav>
-        </footer>
     </body>
-
 </html>
