@@ -5,6 +5,8 @@
     .page{
         display: flex;
         flex-direction: column;
+        position: relative;
+        min-height: 100vh;
     }
 
     header ul{
@@ -18,7 +20,9 @@
         background-color:#f2f2f2;
         display: flex;
         justify-content: space-between;
-        
+/*      position: absolute;
+        width: 100vw;
+  Using these seems to add a scrollbar on the bottom and placing seems a bit off overall*/      
     }
     .CenterButtonsC /*Container*/ {
         display: flex;
@@ -42,6 +46,13 @@
         border: solid 1px rgb(213, 220, 221);
     }
 
+    .CButtons:focus {
+        border: solid 1px rgb(213, 220, 221);
+    }
+
+    .CButtons:focus {
+        border: solid 1px rgb(213, 220, 221);
+    }
     .inline{display:inline;}
     
     .HNavSize{font-size:12px;}
@@ -68,9 +79,10 @@
     }
 
     .SearchBox {
+        padding-left: 40px;
         border-radius: 25px;
         height: 45px;
-        width: 480px;
+        width: 550px;
         background-color: white;
         border-style: solid;
         box-shadow: 0px 1px rgb(204, 196, 196);
@@ -96,7 +108,7 @@
                         <div>
                         <li class = "HNavSize inline text-decoration:none;"><a href = "https://www.google.com/gmail/about/">Gmail</a></li>
                         <li class = "HNavSize inline text-decoration:none;"><a href = "https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a></li>
-                        <li class = "HNavSize inline"><a href = <img src = https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_apps_48px-512.png height = 20px width = 20px></a></li>
+                        <li class = "HNavSize inline"><img src = https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_apps_48px-512.png height = 20px width = 20px></a></li>
                         <li class = "inline"><a href = "https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAAQ" style = "text-decoration: none;font-weight:600;font-size:10pt;font-family:Arial;background-color:#4285f4;color:azure;padding: 5px 10px 8px 10px;">Sign in</a></li>
                         </div>
                     </ul>
@@ -106,9 +118,9 @@
                 <img src = https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png>
             </section>
                 <form class = CBFlex style = "padding-top: 20px">
-                    <input style = "padding-left: 40px;" type = text class = SearchBox>
+                    <input type = text class = SearchBox>
                     <img style = "position: absolute; width: 20px ; height: 20px; margin-left: 15px; padding-top: 15px;" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9J_RUj8AOHbFdO9uE6J7DiwrmA7jT9c7uiw&usqp=CAU">
-                    <img style = "position: absolute; width: 20px ; height: 20px; margin-left: 490px; padding-top: 15px;" src = "https://i.pinimg.com/originals/ea/5f/5b/ea5f5bd3b4110f2afb958049b4096d3a.png">
+                    <img style = "position: absolute; width: 20px ; height: 20px; margin-left: 560px; padding-top: 15px;" src = "https://i.pinimg.com/originals/ea/5f/5b/ea5f5bd3b4110f2afb958049b4096d3a.png">
                 </form>
             <section class = CenterButtonsC>
                 <button class = CButtons>Google Search</button>
